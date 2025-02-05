@@ -1,0 +1,26 @@
+﻿<Page x:Class="ShoesShop.Pages.LoginPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ShoesShop.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="650" d:DesignWidth="1000"
+      Title="ИС Товары для кроссовок - Авторизация"
+      Background="White">
+
+    <Grid>
+        <TextBlock Text="Авторизация" FontSize="45"
+                   HorizontalAlignment="Center"
+                   Margin="0,150,0,0"></TextBlock>
+        <StackPanel HorizontalAlignment="Center"
+                    VerticalAlignment="Center">
+            <Label Content="Введите логин:"></Label>
+            <TextBox x:Name="LoginTextBox"></TextBox>
+            <Label Content="Введите логин:"></Label>
+            <PasswordBox x:Name="PasswordBox"></PasswordBox>
+            <Button x:Name="LoginButton" Click="LoginButton_Click"
+                    Content="Войти" Margin="10"></Button>
+        </StackPanel>
+    </Grid>
+</Page>

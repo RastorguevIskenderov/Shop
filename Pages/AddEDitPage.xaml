@@ -1,0 +1,27 @@
+﻿<Page x:Class="ShoesShop.Pages.AddEDitPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ShoesShop.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="650" d:DesignWidth="1000"
+      Title="ИС Товар кроссовок - добавление/редактирование товаров"
+      Background="White">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0" Background="Black">
+            <Button Width="100" Height="25" Grid.Column="0" Margin="0,0,0,350" Content="Заказы" Foreground="Black" FontFamily="Georgia" FontSize="15"/>
+            <Button Width="100" Height="25" Grid.Column="0" Margin="0,0,0,250" Content="Изменить статус" Foreground="Black"/>
+            <Button Width="100" Height="25" Grid.Column="0" Margin="0,0,0,150" Content="Изменить цену" Foreground="Black"/>
+            <Button Width="100" Height="25" Grid.Column="0" Margin="0,0,0,50" Content="Добавить товар" Foreground="Black"/>
+            <TextBlock Text="Тест" Margin="0,350,0,0" HorizontalAlignment="Center" Foreground="OrangeRed"/>
+            <TextBlock Text="Пользователь" Margin="0,325,0,0" HorizontalAlignment="Center" Foreground="OrangeRed"/>
+            <Button Width="100" Height="25" Grid.Column="0" Margin="0,375,0,0" Content="Выход" Foreground="Black"/>
+        </Grid>
+    </Grid>
+</Page>

@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:ShoesShop.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="650" d:DesignWidth="1000"
+      d:DesignHeight="580" d:DesignWidth="1000"
       Title="ИС Товар кроссовок - добавление/редактирование товаров"
       Background="White">
 
@@ -15,13 +15,18 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Grid Grid.Column="0" Background="Black">
-            <Button Width="100" Height="25" Grid.Column="0" Margin="0,0,0,350" Content="Заказы" Foreground="Black" FontFamily="Georgia" FontSize="15"/>
-            <Button Width="100" Height="25" Grid.Column="0" Margin="0,0,0,250" Content="Изменить статус" Foreground="Black"/>
-            <Button Width="100" Height="25" Grid.Column="0" Margin="0,0,0,150" Content="Изменить цену" Foreground="Black"/>
-            <Button Width="100" Height="25" Grid.Column="0" Margin="0,0,0,50" Content="Добавить товар" Foreground="Black"/>
-            <TextBlock Text="Тест" Margin="0,350,0,0" HorizontalAlignment="Center" Foreground="OrangeRed"/>
-            <TextBlock Text="Пользователь" Margin="0,325,0,0" HorizontalAlignment="Center" Foreground="OrangeRed"/>
-            <Button Width="100" Height="25" Grid.Column="0" Margin="0,375,0,0" Content="Выход" Foreground="Black"/>
+            <StackPanel>
+                <Button Width="100" Height="25" Grid.Column="0" Content="Заказы" Foreground="Black" FontFamily="Georgia" FontSize="15" Margin="0,50,0,0" x:Name="OrdersBtn" Click="OrdersBtn_Click"/>
+                <Button Width="100" Height="25" Grid.Column="0" Content="Изменить статус" Foreground="Black" FontFamily="Georgia" Margin="0,30,0,0"/>
+                <Button Width="100" Height="25" Grid.Column="0" Content="Изменить цену" Foreground="Black" FontFamily="Georgia" Margin="0,30,0,0"/>
+                <Button Width="100" Height="25" Grid.Column="0" Content="Добавить товар" Foreground="Black" FontFamily="Georgia" Margin="0,30,0,0"/>
+                <TextBlock Text="Должность" HorizontalAlignment="Center" Foreground="OrangeRed" Margin="0,150,0,0" x:Name="RoleNameText"/>
+                <TextBlock Text="Пользователь" HorizontalAlignment="Center" Foreground="OrangeRed" Margin="0,10,0,0" x:Name="NameText"/>
+                <Button Width="100" Height="25" Grid.Column="0" Content="Выход" Foreground="Black" FontFamily="Georgia" Margin="0,75,0,0" x:Name="ExitBtn" Click="ExitBtn_Click"/>
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Column="1">
+            <Frame x:Name="MenuFrame"/>
         </Grid>
     </Grid>
 </Page>

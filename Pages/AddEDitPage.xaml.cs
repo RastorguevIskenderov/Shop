@@ -23,6 +23,18 @@ namespace ShoesShop.Pages
         public AddEDitPage()
         {
             InitializeComponent();
+            RoleNameText.Text = $"{Classes.AppConnect.user.Roles.RoleName}";
+            NameText.Text = $"{Classes.AppConnect.user.FirstName} {Classes.AppConnect.user.SecondName}";
+        }
+
+        private void ExitBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Classes.Manager.ManFrame.Navigate(new LoginPage());
+        }
+
+        private void OrdersBtn_Click(object sender, RoutedEventArgs e)
+        {
+            MenuFrame.Navigate(new OrdersPage());
         }
     }
 }

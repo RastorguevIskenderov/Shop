@@ -27,7 +27,24 @@ namespace ShoesShop.Pages
 
         private void LoginButton_Click(object sender, RoutedEventArgs e)
         {
-            Classes.Manager.ManFrame.Navigate(new Pages.AddEDitPage());
+            if (LoginTextBox.Text != "" || PasswordBox.Password != "")
+            {
+                var UserInfo = SneakerShopIREntities.GetContext().Stuff.FirstOrDefault(x => x.Login == LoginTextBox.Text && x.Password == PasswordBox.Password);
+                if(UserInfo != null)
+                {
+                    MessageBox.Show($"Добро пожаловать, {UserInfo.Roles.RoleName}, {UserInfo.FirstName} {UserInfo.SecondName}");
+                    Classes.AppConnect.user = SneakerShopIREntities.GetContext().Stuff.Where(x => x.Login == LoginTextBox.Text).FirstOrDefault();
+                    Classes.Manager.ManFrame.Navigate(new AddEDitPage());
+                }
+                else
+                {
+                    MessageBox.Show("Неправильный пароль или логин");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Не введены пароль или логин");
+            }
         }
     }
 }

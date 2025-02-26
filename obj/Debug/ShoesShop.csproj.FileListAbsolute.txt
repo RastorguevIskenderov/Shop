@@ -18,3 +18,12 @@ S:\ИСП221\Расторгуев Владислав\KomRab\ShoesShop\obj\Debug\
 S:\ИСП221\Расторгуев Владислав\KomRab\ShoesShop\obj\Debug\Pages\LoginPage.g.cs
 S:\ИСП221\Расторгуев Владислав\KomRab\ShoesShop\obj\Debug\App.baml
 S:\ИСП221\Расторгуев Владислав\KomRab\ShoesShop\obj\Debug\Pages\LoginPage.baml
+S:\ИСП221\Расторгуев Владислав\KomRab\ShoesShop\bin\Debug\EntityFramework.dll
+S:\ИСП221\Расторгуев Владислав\KomRab\ShoesShop\bin\Debug\EntityFramework.SqlServer.dll
+S:\ИСП221\Расторгуев Владислав\KomRab\ShoesShop\bin\Debug\EntityFramework.xml
+S:\ИСП221\Расторгуев Владислав\KomRab\ShoesShop\bin\Debug\EntityFramework.SqlServer.xml
+S:\ИСП221\Расторгуев Владислав\KomRab\ShoesShop\bin\Debug\ru\EntityFramework.resources.dll
+S:\ИСП221\Расторгуев Владислав\KomRab\ShoesShop\obj\Debug\ShoesShop_Content.g.cs
+S:\ИСП221\Расторгуев Владислав\KomRab\ShoesShop\obj\Debug\ShoesShop.csproj.CopyComplete
+S:\ИСП221\Расторгуев Владислав\KomRab\ShoesShop\obj\Debug\Pages\OrdersPage.g.cs
+S:\ИСП221\Расторгуев Владислав\KomRab\ShoesShop\obj\Debug\Pages\OrdersPage.baml

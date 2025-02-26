@@ -10,11 +10,11 @@
       Background="White">
 
     <Grid>
-        <TextBlock Text="Авторизация" FontSize="45"
-                   HorizontalAlignment="Center"
-                   Margin="0,150,0,0"></TextBlock>
         <StackPanel HorizontalAlignment="Center"
                     VerticalAlignment="Center">
+            <TextBlock Text="Авторизация" FontSize="45"
+                   HorizontalAlignment="Center"
+                   Margin="0,0,0,50"></TextBlock>
             <Label Content="Введите логин:"></Label>
             <TextBox x:Name="LoginTextBox"></TextBox>
             <Label Content="Введите логин:"></Label>
